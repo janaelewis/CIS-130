@@ -29,14 +29,14 @@
  document.getElementById("salad").addEventListener("click", calcTotal);
  function calcTotal() {
     let cost = 0;
-    let buyChicken = document.getElementsById("chicken").checked
-    let buyHalibu = document.getElementsById("halibut").checked
-    let buyBurger = document.getElementsById("burger").checked
-    let buySalmon = document.getElementsById("salmon").checked
-    let buySalad = document.getElementsById("salad").checked
+    let buyChicken = document.getElementById("chicken").checked
+    let buyHalibut = document.getElementById("halibut").checked
+    let buyBurger = document.getElementById("burger").checked
+    let buySalmon = document.getElementById("salmon").checked
+    let buySalad = document.getElementById("salad").checked
 
     cost += buyChicken ? CHICKEN_PRICE : 0;
-    cost += buyHalibu ? HALIBUT_PRICE : 0;
+    cost += buyHalibut ? HALIBUT_PRICE : 0;
     cost += buyBurger ? BURGER_PRICE : 0;
     cost += buySalmon ? SALMON_PRICE : 0;
     cost += buySalad ? SALAD_PRICE : 0;
@@ -45,7 +45,7 @@
     let tax = cost * SALES_TAX;
     document.getElementById("foodTax").innerHTML = formatCurrency(tax);
     let totalCost = cost + tax;
-    document.getElementById("totalBill").innerHTML = formatCurrency(totalCost);
+    document.getElementById("totalCost").innerHTML = formatCurrency(totalCost);
 
  }
  function formatCurrency(value) {
