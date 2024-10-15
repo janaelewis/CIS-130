@@ -22,11 +22,12 @@
  const SALAD_PRICE = 7.95;
  const SALES_TAX = 0.07;
 
- document.getElementById("chicken").addEventListener("click", calcTotal);
- document.getElementById("halibut").addEventListener("click", calcTotal);
- document.getElementById("burger").addEventListener("click", calcTotal);
- document.getElementById("salmon").addEventListener("click", calcTotal);
- document.getElementById("salad").addEventListener("click", calcTotal);
+ document.getElementById("chicken").onclick = calcTotal;
+ document.getElementById("halibut").onclick = calcTotal;
+ document.getElementById("burger").onclick = calcTotal;
+ document.getElementById("salmon").onclick = calcTotal;
+ document.getElementById("salad").onclick = calcTotal;
+ 
  function calcTotal() {
     let cost = 0;
     let buyChicken = document.getElementById("chicken").checked
