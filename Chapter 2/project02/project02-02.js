@@ -11,10 +11,10 @@
 
  
 function verifyForm() {
-      var name = document.getElementById("nameinput").value;
-      var email = document.getElementById("emailinput").value;
-      var phone = document.getElementById("phoneinput").value;
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let phone = document.getElementById("phone").value;
       (name && email && phone) ? window.alert("Thank you!") : window.alert("Please fill in all fields");
 }
-document.getElementById("submit").addEventListener("click", verifyForm, false);
+document.getElementById("submit").addEventListener("click", verifyForm);
 
