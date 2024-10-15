@@ -45,8 +45,8 @@
     document.getElementById("foodTotal").innerHTML = formatCurrency(cost);
     let tax = cost * SALES_TAX;
     document.getElementById("foodTax").innerHTML = formatCurrency(tax);
-    let totalCost = cost + tax;
-    document.getElementById("totalCost").innerHTML = formatCurrency(totalCost);
+    let totalBill = cost + tax;
+    document.getElementById("totalBill").innerHTML = formatCurrency(totalBill);
 
  }
  function formatCurrency(value) {
